@@ -10,10 +10,7 @@ echo "<?php phpinfo(); ?>" > www/index.php
 mkdir -p nginx/conf.d
 
 <img width="694" height="140" alt="image" src="https://github.com/user-attachments/assets/ed15c52b-5ef7-40b9-8db0-6ab41ef41b5c" />
-
-
-
-
+<br>
 <img width="206" height="603" alt="image" src="https://github.com/user-attachments/assets/0897053b-deaa-4d61-8f55-2beb09af595b" />
 
 
