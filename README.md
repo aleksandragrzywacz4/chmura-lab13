@@ -36,3 +36,37 @@ jak widać na zrzucie ekranu utworzona została baza testdb oraz udało się zai
 4. Uzasadnienie
 <br>
 Kontener phpMyAdmin podłączyłam zarówno do sieci backend jak i frontend. Musiał zostać podłączony do backend, ponieważ inaczej nie mógłby komunikować sie z serwerem bazy danych, która tam się znajduje, aby chronić ją przed bezpośrednim dostępem ze świata zewnętrznego. Podłączyłam go również do frontend, ponieważ posiada interfejs graficzny, do którego potrzebny jest bezpośredni dostęp z poziomu przeglądarki.
+
+
+
+*Laboratorium 13D*
+<img width="953" height="360" alt="image" src="https://github.com/user-attachments/assets/29bc5e69-35c0-4609-b295-5412fd635339" />
+<br>
+1. Najpierw sprzątamy po starej wersji
+<br>
+docker compose down -v
+
+2.Utworzenie pliku z hasłem
+<br>
+echo "rootpassword" > db_root_password.txt
+
+3.Edycja docker-compose.yml
+<br>
+nano docker-compose.yml
+<br>
+<img width="541" height="637" alt="image" src="https://github.com/user-attachments/assets/af22be08-9bf5-44b4-a210-38bd884cb8f1" />
+<br>
+<img width="489" height="428" alt="image" src="https://github.com/user-attachments/assets/c3c783fc-000f-414e-bbe7-cfef2b9d8c93" />
+<br>
+
+4.Ponowne uruchomienie
+<br>
+docker compose up -d
+
+5.Sprawdzenie działania
+<br>
+curl localhost:4001
+<br>
+<img width="942" height="442" alt="image" src="https://github.com/user-attachments/assets/e49b419e-6c64-48a1-aff2-cd372875a486" />
+<br>
+<img width="1906" height="685" alt="image" src="https://github.com/user-attachments/assets/725cf81a-3c23-4606-b670-5ffa520295cf" />
