@@ -27,4 +27,7 @@ curl localhost:4001
 <img width="951" height="508" alt="image" src="https://github.com/user-attachments/assets/4c2d6b88-2136-4506-a2af-c42dfd14ba2e" />
 
 <img width="1895" height="787" alt="image" src="https://github.com/user-attachments/assets/c9c22f4e-22e0-4e43-9633-d8846861474a" />
+jak widać na zrzucie ekranu utworzona została baza testdb oraz udało się zainicjować też bazę nowabazka
 
+4. Uzasadnienie
+Kontener phpMyAdmin podłączyłam zarówno do sieci backend jak i frontend. Musiał zostać podłączony do backend, ponieważ inaczej nie mógłby komunikować sie z serwerem bazy danych, która tam się znajduje, aby chronić ją przed bezpośrednim dostępem ze świata zewnętrznego. Podłączyłam go również do frontend, ponieważ posiada interfejs graficzny, do którego potrzebny jest bezpośredni dostęp z poziomu przeglądarki.
