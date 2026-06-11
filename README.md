@@ -6,7 +6,9 @@ Użyte polecenia:
 1. Przygotowanie struktury plików:
 
 mkdir -p www
+<br>
 echo "<?php phpinfo(); ?>" > www/index.php
+<br>
 mkdir -p nginx/conf.d
 
 <img width="694" height="140" alt="image" src="https://github.com/user-attachments/assets/ed15c52b-5ef7-40b9-8db0-6ab41ef41b5c" />
