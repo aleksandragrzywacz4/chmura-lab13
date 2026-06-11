@@ -43,8 +43,8 @@ Kontener phpMyAdmin podłączyłam zarówno do sieci backend jak i frontend. Mus
 <img width="953" height="360" alt="image" src="https://github.com/user-attachments/assets/29bc5e69-35c0-4609-b295-5412fd635339" />
 <br>
 1. Najpierw sprzątamy po starej wersji
-<br>
 docker compose down -v
+<br>
 
 2.Utworzenie pliku z hasłem
 <br>
