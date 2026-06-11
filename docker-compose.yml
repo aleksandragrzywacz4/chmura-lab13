@@ -1,0 +1,48 @@
+services:
+  nginx:
+    image: nginx:latest
+    container_name: lemp_nginx
+    ports:
+      - "4001:80"
+    volumes:
+      - ./www:/var/www/html
+      - ./nginx/conf.d:/etc/nginx/conf.d
+    networks:
+      - frontend
+      - backend
+    depends_on:
+      - php
+
+  php:
+    image: php:8.2-fpm
+    container_name: lemp_php
+    volumes:
+      - ./www:/var/www/html
+    networks:
+      - backend
+
+  mysql:
+    image: mysql:8.0
+    container_name: lemp_mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: testdb
+    networks:
+      - backend
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: lemp_phpmyadmin
+    ports:
+      - "6001:80"
+    environment:
+      PMA_HOST: mysql
+      PMA_USER: root
+      PMA_PASSWORD: rootpassword
+    networks:
+      - frontend
+      - backend
+
+networks:
+  frontend:
+  backend:
