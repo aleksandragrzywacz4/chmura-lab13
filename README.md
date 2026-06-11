@@ -26,10 +26,10 @@ docker compose up -d
 
 curl localhost:4001
 
+<img width="957" height="490" alt="image" src="https://github.com/user-attachments/assets/9e0bbcb2-8475-4961-bad8-893d50ca4305" />
+
+<br>
 <img width="1919" height="772" alt="image" src="https://github.com/user-attachments/assets/667f44f8-3f5b-48ec-8d61-e3f1041209bb" />
-
-
-<img width="1895" height="787" alt="image" src="https://github.com/user-attachments/assets/c9c22f4e-22e0-4e43-9633-d8846861474a" />
 jak widać na zrzucie ekranu utworzona została baza testdb oraz udało się zainicjować też bazę nowabazka
 
 4. Uzasadnienie
